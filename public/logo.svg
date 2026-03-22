@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="larkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2B5EEA"/>
+      <stop offset="100%" stop-color="#00A2FF"/>
+    </linearGradient>
+    <linearGradient id="feishuGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00E6A7"/>
+      <stop offset="100%" stop-color="#00C48C"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Base Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect width="512" height="512" rx="112" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="4" />
+  
+  <!-- Geometric Abstract Logo Mark (Dual-sync concept) -->
+  <g filter="url(#shadow)" transform="translate(48, 48)">
+    <g filter="url(#glow)">
+      <!-- Left / Top Element (Feishu Green) -->
+      <path d="M 80 208 C 80 137.3 137.3 80 208 80 L 208 208 Z" fill="url(#feishuGrad)"/>
+      <path d="M 208 80 C 278.7 80 336 137.3 336 208 L 208 208 Z" fill="url(#larkGrad)" opacity="0.8"/>
+      
+      <!-- Right / Bottom Element (Lark Blue) -->
+      <path d="M 336 208 C 336 278.7 278.7 336 208 336 L 208 208 Z" fill="url(#larkGrad)"/>
+      <path d="M 80 208 C 80 278.7 137.3 336 208 336 L 208 208 Z" fill="url(#feishuGrad)" opacity="0.8"/>
+      
+      <!-- Center Sync Core -->
+      <circle cx="208" cy="208" r="64" fill="#ffffff" opacity="0.95" />
+      <circle cx="208" cy="208" r="32" fill="url(#bgGrad)" />
+    </g>
+  </g>
+</svg>

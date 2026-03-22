@@ -1,0 +1,36 @@
+{
+  "name": "migrate-tool",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.59.0",
+    "file-saver": "^2.0.5",
+    "jszip": "^3.10.1",
+    "lottie-react": "^2.4.1",
+    "next": "16.2.1",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "react-rnd": "^10.5.3"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.1",
+    "fake-indexeddb": "^6.2.5",
+    "jest": "^30.3.0",
+    "jest-fetch-mock": "^3.0.3",
+    "ts-jest": "^29.4.6",
+    "typescript": "^5"
+  }
+}
